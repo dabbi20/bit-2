@@ -149,12 +149,57 @@
 /* Para los íconos de redes sociales usaremos Font Awesome */
 
 
-@media (max-width: 600px) {
-  #root {
-    justify-content: center;
+@media (max-width: 575px) {
+  .header-container h1 {
+    font-size: 1.8rem;
   }
-  
+
+  .header-container p {
+    font-size: 1rem;
+  }
+
   .card {
-    width: 90%;
+    width: 95%;
+  }
+
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card {
+    width: 80%;
+  }
+
+  .card-img-top {
+    height: 240px;
+  }
+
+  .header-container h1 {
+    font-size: 2.2rem;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card {
+    width: 45%;
+  }
+
+  .card-img-top {
+    height: 260px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .card {
+    width: 280px; 
+  }
+
+  .card-img-top {
+    height: 280px;
   }
 }

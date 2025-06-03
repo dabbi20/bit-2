@@ -14,12 +14,12 @@ fetch('datos.json')
     for (let i = 0; i < info.length; i++) {
 
         if (info[i].usernameGithub) {
-            // Construimos el HTML de las notas sumando los scores
+            
             let notasHTML = '';
             if (info[i].projects && info[i].projects.length > 0) {
                 notasHTML = '<ul>';
                 info[i].projects.forEach(project => {
-                    // Sumamos los scores del array
+                    
                     const sumaScores = project.score.reduce((acum, val) => acum + val, 0);
                     notasHTML += `<li><strong>${project.name}:</strong> ${sumaScores.toFixed(2)}</li>`;
                 });
